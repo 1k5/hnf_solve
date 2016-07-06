@@ -2,7 +2,12 @@
 
 ## Build instructions
 Requires libflint (>= 2.5.2) and libgmp to build.  Make sure the libraries and
-includes files are in your search path.  Run `make` to build.
+includes files are in your search path.  Download the source using `git` and
+build with `make`, e.g. as follows:
+
+    $ git clone https://github.com/1k5/hnf_solve.git
+    $ cd hnf_solve
+    $ make
 
 
 ## Usage
@@ -39,8 +44,8 @@ Try e.g. the following:
     24 13 1
 
 ### Diophantine equation solver
-    $ ./diopsolve --help
-    Usage: diopsolve [OPTION...] MATRIX-A VECTOR-b
+    $ ./solve --help
+    Usage: solve [OPTION...] MATRIX-A VECTOR-b
     Solve system of linear diophantine equations via HNF.
 
       -x FILE                    Write solution vector x to FILE instead of
@@ -56,7 +61,7 @@ Try e.g. the following:
 
 Try e.g. the following:
 
-    $ ./diopsolve test/A.mtx test/b.mtx
+    $ ./solve test/A.mtx test/b.mtx
     Computing HNF... done.
     %%MatrixMarket matrix coordinate integer general
     15 1 4
