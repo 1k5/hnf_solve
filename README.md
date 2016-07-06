@@ -79,4 +79,4 @@ This repository includes a modified version of the MatrixMarket IO routines
 available at http://math.nist.gov/MatrixMarket/mmio-c.html .
 
 
-vim: tw=78 ts=4 sw=4 et ai:
+[//]: # ( vim: set tw=78 ts=4 sw=4 et ai: )
